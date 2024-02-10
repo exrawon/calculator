@@ -1,3 +1,7 @@
+html {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
 body {
 	margin: 0;
 	display: flex;
@@ -107,12 +111,15 @@ button:active {
 		height: 80px;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 419px) {
+	body {
+		height: 90vh;
+	}
 	#display {
 		font-size: 2.5rem;
 	}
 	#keys {
-		height: 40vh;
+		height: 35vh;
 	}
 	button {
 		width: 60px;
