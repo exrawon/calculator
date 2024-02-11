@@ -2,8 +2,9 @@ const display = document.getElementById('display');
 let isError = false;
 
 const appendToDisplay = (input) => {
-	if (display.value.length <= 12 && !isError) {
+	if (!isError) {
 		display.value += input;
+		display.scrollLeft = display.scrollWidth; //to scroll to end of div when overflow
 	}
 };
 
